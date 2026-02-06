@@ -1,0 +1,8 @@
+{
+  "servicios": [
+    "nginx",
+    "apache2",
+    "mysql",
+    "postgresql"
+  ]
+}
