@@ -140,9 +140,9 @@ echo "=== BUSCANDO ARCHIVOS ANTIGUOS (>7 días) ==="
 # Buscar archivos proyecto_*.tar.gz con más de 7 días
 # maxdepth 1: solo en carpeta principal, no subcarpetas
 #ARCHIVOS_ANTIGUOS=$(find "$DIR_RESPALDOS" -maxdepth 1 -name "proyecto_*.tar.gz" -mtime +7 2>/dev/null)
-#ARCHIVOS_ANTIGUOS=$(find "$DIR_RESPALDOS" -maxdepth 1 -name "proyecto_*.tar.gz" -mtime +1 2>/dev/null)
+ARCHIVOS_ANTIGUOS=$(find "$DIR_RESPALDOS" -maxdepth 1 -name "proyecto_*.tar.gz" -mtime +1 2>/dev/null)
 # ARCHIVOS_ANTIGUOS=$(find "$DIR_RESPALDOS" -maxdepth 1 -name "proyecto_*.tar.gz" -mtime +0 2>/dev/null)
-ARCHIVOS_ANTIGUOS=$(find "$DIR_RESPALDOS" -maxdepth 1 -name "proyecto_*.tar.gz" -amin +1 2>/dev/null)
+#ARCHIVOS_ANTIGUOS=$(find "$DIR_RESPALDOS" -maxdepth 1 -name "proyecto_*.tar.gz" -amin +1 2>/dev/null)
 
 # Convertir a array
 mapfile -t ARCHIVOS_ELIMINADOS_TMP <<< "$ARCHIVOS_ANTIGUOS"

@@ -1,0 +1,8 @@
+{
+  "archivos": [
+    "/etc/passwd",
+    "/etc/shadow",
+    "/etc/ssh/sshd_config",
+    "/etc/fstab"
+  ]
+}
