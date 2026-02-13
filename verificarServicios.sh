@@ -18,6 +18,13 @@ NO_CONECTADO=0
 ERROR=0
 
 VERIFICACIONES=""
+#verificar que la llave tiene permisos
+if [ ! -f "$LLAVE_SSH" ]; then
+    echo "Error: no se encontró la llave SSH en $LLAVE_SSH"
+    exit 1
+fi
+
+chmod 600 "$LLAVE_SSH"
 
 for servicio in $SERVICIOS; do
     TOTAL=$((TOTAL + 1))

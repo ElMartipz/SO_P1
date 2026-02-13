@@ -8,14 +8,6 @@ CONFIG="configArchivos.json"
 HASHES_BASE="hashes_base.json"
 FECHA=$(date +%F)
 LOG_FILE="log_hashes_$FECHA.json"
-
-
-# ===== VERIFICAR DEPENDENCIAS =====
-if ! command -v jq &> /dev/null; then
-    echo "Error: jq no está instalado"
-    exit 1
-fi
-
 SCRIPT_PATH="$(readlink -f "$0")"
 CRON_SCHEDULE="*/3 * * * *"
 CRON_CMD="$CRON_SCHEDULE $SCRIPT_PATH"
