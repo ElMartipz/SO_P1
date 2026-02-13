@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # ===== CONFIGURACIÓN =====
-CONFIG="configArchivosPrueba.json"
-HASHES_BASE="hashes_base.json"
-LOG_DIR="logs"
-FECHA=$(date +%F)
-LOG_FILE="$LOG_DIR/log_hashes_$FECHA.json"
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$BASE_DIR" || exit 1
 
-mkdir -p "$LOG_DIR"
+CONFIG="configArchivos.json"
+HASHES_BASE="hashes_base.json"
+FECHA=$(date +%F)
+LOG_FILE="log_hashes_$FECHA.json"
+
 
 # ===== VERIFICAR DEPENDENCIAS =====
 if ! command -v jq &> /dev/null; then
@@ -115,4 +116,4 @@ jq -n \
 }' > "$LOG_FILE"
 
 echo "Verificación completada. Log generado en $LOG_FILE"
-echo "Ejecución: $(date)" >> logs/debug_cron.txts
+echo "Ejecución: $(date)" >> debug_cron.txt

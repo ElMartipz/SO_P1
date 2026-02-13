@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-02-12",
+  "operacion": "verificacion_hashes",
+  "archivos": [
+    {
+      "ruta": "/etc/passwd",
+      "sha256_actual": "fb1c07efbc14cdbd9ae5c911cd46797c5c9e0e00780515671ad31e3348120dc4",
+      "sha256_esperado": "fb1c07efbc14cdbd9ae5c911cd46797c5c9e0e00780515671ad31e3348120dc4",
+      "estado": "sin_cambios"
+    },
+    {
+      "ruta": "/etc/shadow",
+      "sha256_actual": "9931b40dd877de01aa935cc1aa7de6ce3be16b8755d86ff8f1406704d07d528d",
+      "sha256_esperado": "9931b40dd877de01aa935cc1aa7de6ce3be16b8755d86ff8f1406704d07d528d",
+      "estado": "sin_cambios"
+    },
+    {
+      "ruta": "/etc/ssh/sshd_config",
+      "sha256_actual": "795dc2953017b4fc01524ea9b85a4fc4f1c0f00fd7f1a625f9c43f4afde5b196",
+      "sha256_esperado": "64325541513d33ea1d2ccd19c77750d458e67e7967fd2e7ef81d92f0aa2ffe21",
+      "estado": "modificado"
+    },
+    {
+      "ruta": "/etc/fstab",
+      "sha256_actual": "e544b5c5f7db33375ea184e7abb40c9ad74047f599ad37a0c2c3763187d54d3c",
+      "sha256_esperado": "e544b5c5f7db33375ea184e7abb40c9ad74047f599ad37a0c2c3763187d54d3c",
+      "estado": "sin_cambios"
+    }
+  ],
+  "resumen": {
+    "total_verificados": 4,
+    "sin_cambios": 3,
+    "modificados": 1
+  },
+  "alerta": true,
+  "estado_final": "completado_con_alertas"
+}

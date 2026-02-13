@@ -1,4 +1,6 @@
 {
-  "/home/martipz/pruebas_hash/test1.conf": "c011e3d7dbef757daece962626f81fb597572c8c3532cfcb1f992b649c8f7252",
-  "/home/martipz/pruebas_hash/test2.conf": "4c04428bb60ddec81a2af2afa75ba89835b48d27203710091ab18fff2bb7958f"
+  "/etc/passwd": "fb1c07efbc14cdbd9ae5c911cd46797c5c9e0e00780515671ad31e3348120dc4",
+  "/etc/shadow": "9931b40dd877de01aa935cc1aa7de6ce3be16b8755d86ff8f1406704d07d528d",
+  "/etc/ssh/sshd_config": "64325541513d33ea1d2ccd19c77750d458e67e7967fd2e7ef81d92f0aa2ffe21",
+  "/etc/fstab": "e544b5c5f7db33375ea184e7abb40c9ad74047f599ad37a0c2c3763187d54d3c"
 }
